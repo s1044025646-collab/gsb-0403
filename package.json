@@ -1,0 +1,22 @@
+{
+  "name": "binary-hough-lines",
+  "version": "1.0.0",
+  "description": "二值边缘图离散 Hough 直线投票后端（API + CLI）",
+  "type": "module",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --disable-warning=ExperimentalWarning --test dist/test/hough.test.js dist/test/db.test.js dist/test/api.test.js",
+    "start": "node --disable-warning=ExperimentalWarning dist/src/cli.js serve",
+    "demo": "npm run build && node --disable-warning=ExperimentalWarning dist/src/demo.js",
+    "cli": "node --disable-warning=ExperimentalWarning dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
