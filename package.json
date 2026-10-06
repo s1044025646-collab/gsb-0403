@@ -1,0 +1,21 @@
+{
+  "name": "hough-edge-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Binary edge map Hough line voting backend (API + CLI)",
+  "type": "commonjs",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/hough.test.js dist-test/test/api.test.js",
+    "start": "npm run build && node dist/server.js",
+    "cli": "npm run build && node dist/cli.js",
+    "demo": "npm run build && node dist/cli.js demo",
+    "smoke": "npm run build && node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "5.9"
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "single edge point at (1,1)",
+  "matrix": [
+    [0,0,0],
+    [0,1,0],
+    [0,0,0]
+  ],
+  "grid": { "thetaStepDeg": 45, "rhoStep": 1 },
+  "expected": { "totalVotes": 4, "note": "one vote per theta bin" }
+}

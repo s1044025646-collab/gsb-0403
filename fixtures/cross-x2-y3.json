@@ -1,0 +1,19 @@
+{
+  "name": "crossing lines x=2 and y=3 sharing point (2,3) in 6x6 image",
+  "matrix": [
+    [0,0,1,0,0,0],
+    [0,0,1,0,0,0],
+    [0,0,1,0,0,0],
+    [1,1,1,1,1,1],
+    [0,0,1,0,0,0],
+    [0,0,1,0,0,0]
+  ],
+  "grid": { "thetaStepDeg": 90, "rhoStep": 1 },
+  "expected": {
+    "cells": [
+      { "thetaIdx": 0, "thetaDeg": 0, "rhoIdx": 2, "rho": 2, "votes": 6 },
+      { "thetaIdx": 1, "thetaDeg": 90, "rhoIdx": 3, "rho": 3, "votes": 6 }
+    ],
+    "sharedPoint": { "x": 2, "y": 3 }
+  }
+}
